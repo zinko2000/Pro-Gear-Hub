@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Pro Gear Hub</title>
+    <link rel="stylesheet" href="Css/checkout_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/Screenshot2025-03-13174412.png" alt="Pro Gear Hub">
+            </div>
+            
+            <div class="search-container">
+                <form class="search-form">
+                    <input type="text" placeholder="Search products..." class="search-input">
+                    <button type="submit" class="search-button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a href="product.html" class="dropdown-btn">Shop</a>
+                    <ul class="dropdown-content">
+                        <li><a href="product.html">Fitness Equipment</a></li>
+                        <li><a href="product.html">Workout Clothing</a></li>
+                        <li><a href="product.html">Training Accessories</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="auth/logout.php">Logout</a></li>
+<!--                 <li class="cart-icon">
+                    <a href="checkout.html" class="cart-trigger">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </li> -->
+            </ul>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+        <div class="checkout-header">
+            <h1>Checkout</h1>
+            <div class="checkout-progress">
+                <div class="step active"><span>1</span> Cart</div>
+                <div class="step"><span>2</span> Payment</div>
+                <div class="step"><span>3</span> Review</div>
+            </div>
+        </div>
+    <main class="checkout-container">
+        <section class="cart-items-section">
+            <h2>Your Items</h2>
+            <div class="cart-items-container">
+    <!-- Items will be inserted here -->
+            </div>
+            <div class="empty-cart-message" style="display: none;">
+                <i class="fas fa-shopping-cart"></i>
+                <p>Your cart is empty</p>
+                <a href="product.html" class="continue-shopping">Continue Shopping</a>
+            </div>
+        </section>
+
+        <section class="order-summary">
+            <h2>Order Summary</h2>
+            <div class="summary-details">
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span class="subtotal">$0.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Shipping</span>
+                    <span class="shipping">$5.99</span>
+                </div>
+                <div class="summary-row">
+                    <span>Tax</span>
+                    <span class="tax">$0.00</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Total</span>
+                    <span class="total-amount">$0.00</span>
+                </div>
+            </div>
+            <button class="checkout-btn">Proceed to Payment</button>
+        </section>
+    </main>
+
+        <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Pro Gear Hub</h3>
+                <p>From resistance bands to lifting gloves, we provide durable, performance-driven equipment for every fitness level.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+    
+            <div class="footer-col">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="product.html">All Products</a></li>
+                    <li><a href="product.html">Featured</a></li>
+                    <li><a href="product.html">New Arrivals</a></li>
+                    <li><a href="product.html">Sale Items</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-col">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="shoppingpolicy.html">Shipping Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <p>&copy; 2025 Pro Gear hub. All rights reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-apple-pay"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="JS/progearhub-script.js"></script>
+    <script src="JS/checkout_script.js"></script>
+</body>
+</html>

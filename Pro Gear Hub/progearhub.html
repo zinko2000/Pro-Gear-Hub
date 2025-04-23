@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Gear Hub</title>
+    <link rel="stylesheet" href="Css/progearhub-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/Screenshot2025-03-13174412.png" alt="Pro Gear Hub">
+            </div>
+            
+            <div class="search-container">
+                <form class="search-form">
+                    <input type="text" placeholder="Search products..." class="search-input">
+                    <button type="submit" class="search-button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="progearhub.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="product.html" class="dropdown-btn">Shop</a>
+                    <ul class="dropdown-content">
+                        <li><a href="product.html">Fitness Equipment</a></li>
+                        <li><a href="product.html">Workout Clothing</a></li>
+                        <li><a href="product.html">Training Accessories</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="auth/logout.php">Logout</a></li>
+<!--                 <div class="auth-buttons">
+                    <a href="auth/login.php" id="login-btn" class="auth-link">Login</a>
+                    <a href="auth/register.php" id="register-btn" class="auth-link">Register</a>
+                    <a href="auth/logout.php" id="logout-btn" class="auth-link">Logout</a>
+                    <span id="user-greeting" style="display: none; margin-left: 10px;"></span>
+                </div> -->
+            </ul>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+        <!-- Product Banner -->
+    <section class="product-banner">
+        <div class="banner-content">
+            <h1>Medium Everyday Holdall</h1>
+            <p class="subtitle">The Everyday range is for your everyday items, as well as anything else you might need for the journey.</p>
+            <div class="price">$70<span class="original-price">$149.99</span></div>
+            <button class="cta-button">Shop Now</button>
+        </div>
+        <div class="banner-image">
+            <img src="images/EverydayHoldallM.png" alt="Medium Everyday Holdall">
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <h2 class="section-title">Featured Products</h2>
+        <div class="products-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="images/81FwxCuDZXL.png" alt="NELEUS Dry Fit">
+                <h3>NELEUS Dry Fit</h3>
+                <div class="product-meta">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(128)</span>
+                    </div>
+                    <div class="price">$29.89 <span class="original-price">$59.99</span></div>
+                </div>
+                <button class="view-more-btn" data-product-id="1">See More</button>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="images/71iB+pHo2lL.png" alt="Running Shoes">
+                <h3>MOHUACHI</h3>
+                <div class="product-meta">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>(86)</span>
+                    </div>
+                    <div class="price">$22.92 <span class="original-price">$59.99</span></div>
+                </div>
+                <button class="view-more-btn" data-product-id="2">See More</button>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="images/AC_SX679.png" alt="Fitness Tank Tops">
+                <h3>Fitness Tank Tops</h3>
+                <div class="product-meta">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(214)</span>
+                    </div>
+                    <div class="price">$32.99 <span class="original-price">$65.99</span></div>
+                </div>
+                <button class="view-more-btn" data-product-id="3">See More</button>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="product-card">
+                <img src="images/removebg-preview.png" alt="Hanes Sport Xtemp">
+                <h3>Hanes Sport Xtemp</h3>
+                <div class="product-meta">
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                        <span>(57)</span>
+                    </div>
+                    <div class="price">$15.90 <span class="original-price">$29.99</span></div>
+                </div>
+                <button class="view-more-btn" data-product-id="4">See More</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Pro Gear Hub</h3>
+                <p>From resistance bands to lifting gloves, we provide durable, performance-driven equipment for every fitness level.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Shop</h3>
+                <ul>
+                    <li><a href="product.html">All Products</a></li>
+                    <li><a href="product.html">Featured</a></li>
+                    <li><a href="product.html">New Arrivals</a></li>
+                    <li><a href="product.html">Sale Items</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="shippingpolicy.html">Shipping Policy</a></li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <p>&copy; 2025 Pro Gear hub. All rights reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-apple-pay"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JS/progearhub-script.js"></script>
+</body>
+</html>
